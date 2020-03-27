@@ -26,3 +26,9 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  3000);
+
+ScrollReveal().reveal('.tutorial', {delay: 300, reset: true});
+ScrollReveal().reveal('.gebruikerz', {delay: 300, reset: true});
+ScrollReveal().reveal('.work', {delay: 300, reset: true});
+ScrollReveal().reveal('.who', {delay: 300, reset: true});
+ScrollReveal().reveal('.team', {delay: 300, reset: true});
