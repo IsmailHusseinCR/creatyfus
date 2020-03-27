@@ -2,26 +2,11 @@
 
 $(".arrow").click(function() {
     $('html,body').animate({
-        scrollTop: $(".work").offset().top},
+        scrollTop: $(".who").offset().top},
         'slow');
 });
 
 
-let position = $(".work").position().top + $(".work").outerHeight();
-let bottom_of_window = $(window).scrollTop() + $(window).height();
-
-
-console.log(position)
-
-$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if ($(position > bottom_of_window)) {
-        $('.tutorial').fadeIn();
-    } else {
-        $('.tutorial').fadeOut();
-    }
-
-});
 
 
 var image = document.getElementsByClassName('thumbnail');
@@ -31,4 +16,13 @@ new simpleParallax(image, {
 });
 
 
+$("#slideshow > div:gt(0)").hide();
 
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);

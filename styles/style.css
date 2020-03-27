@@ -215,9 +215,11 @@ section {
       display: flex; 
       flex-direction: row; 
       align-items: center; 
+      align-content: center;
       flex-wrap: wrap; 
       justify-content: space-between;
       padding: 25px; 
+      margin: 20px;
       color: black; 
       
       
@@ -240,7 +242,7 @@ section {
     color: black; 
     filter: grayscale(1);
     opacity: 0.5;
-    height: 50vh; 
+    height: 35vh; 
     overflow: hidden;
 }
 
@@ -253,27 +255,73 @@ section {
 
     border: 1px solid black;
     border-width: 60px;
-
-
     overflow: hidden;
+    min-height: 100vh; 
+    height: auto; 
+    padding: 25px; 
+    content: 25px;
+    
+
     
 }
 
 .rowIntro{ 
-    overflow: hidden;
-   display: flex; 
-   flex-direction: row;
-   flex-wrap: wrap; 
-   justify-content: center; 
-   padding: auto;
-   object-fit: contain
+ 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.columnIntro span { 
+ 
+    width: 50px;
+    word-wrap:break-word;
+   
+}
+
+.columnIntro img { 
+    padding: 5px;
+    display: block;
+    max-height: 500px;
+    height: auto; 
+    max-width: 100%; 
+   
 }
 
 .columnIntro { 
-
-    padding: 10px; 
-    margin: 10px; 
-    
+    padding: 20px; 
+    margin: 25px; 
 }
 
+
+.gebruikers { 
+    text-align: center;
+
+}
+
+.gebruikerz { 
+    color: black; 
+    height: 35vh; 
+    overflow: hidden;
+}
+
+.slideshow {
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    margin: 20px; 
+    padding: 20px; 
+    overflow: hidden;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    text-align: center;
+    top: 50%; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
 
