@@ -8,6 +8,7 @@ section {
     width: auto;
     height:100vh;
     overflow-wrap: break-word;
+    overflow:hidden
     
   
 
@@ -25,7 +26,7 @@ section {
 .landing h1 { 
     
     position: absolute;
-    font-size: xx-large;
+    font-size: 6vw;
     top: 40%;
     left: 50%;
     margin: 0 auto;  
@@ -43,7 +44,8 @@ section {
     position: absolute;
     top: 45%;
     left: 50%;
-    padding: 10px; 
+    font-size: 3vw; 
+    padding: auto; 
     transform: translate(-50%, -50%);
     color: #5d8fde; 
     animation: loadinaswell 2s none 
@@ -120,8 +122,9 @@ section {
 
 .team { 
     background-color: #5d8fde; 
+    color: white; 
     overflow: hidden;
-    min-height: 100vh; 
+    min-height: 50vh; 
     height: auto; 
     padding: 5px; 
 }
@@ -187,7 +190,6 @@ section {
     margin: 30px; 
     display: flex; 
     flex-direction: row-reverse; 
-    display: flex; 
     flex-wrap: wrap; 
     line-height: 25px;
     
@@ -198,14 +200,45 @@ section {
     padding: 25px; 
     margin: 30px; 
     display: flex; 
-    flex-direction: row; 
-    display: flex; 
+    flex-direction: row;  
     flex-wrap: wrap; 
     line-height: 25px;
 }
   
 
-
 .circular--square {
     border-radius: 50%;
   }
+
+.flexteam { 
+      display: flex; 
+      flex-direction: row; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      justify-content: space-between;
+      padding: 25px; 
+      color: white; 
+      
+      
+  }
+
+  .meetTeam { 
+      text-align: center;
+  }
+
+.teamMember { 
+
+    margin: 5px;
+    padding: 5px; 
+    top: 50%;
+    text-align: center;
+    
+}
+
+.parallax { 
+    color: black; 
+    filter: grayscale(1);
+    opacity: 0.5;
+    height: 50vh; 
+    overflow: hidden;
+}
