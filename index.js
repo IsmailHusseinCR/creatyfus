@@ -20,15 +20,16 @@ $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(3000)
-    .next()
-    .fadeIn(3000)
-    .end()
+    .fadeOut(4000)
+    .next(4000)
+    .fadeIn(4000)
+    .end(4000)  
     .appendTo('#slideshow');
-},  3000);
+},  4000);
 
-ScrollReveal().reveal('.tutorial', {delay: 300, reset: true});
-ScrollReveal().reveal('.gebruikerz', {delay: 300, reset: true});
-ScrollReveal().reveal('.work', {delay: 300, reset: true});
-ScrollReveal().reveal('.who', {delay: 300, reset: true});
-ScrollReveal().reveal('.team', {delay: 300, reset: true});
+ScrollReveal().reveal('.tutorial', {delay: 100, reset: false});
+ScrollReveal().reveal('.gebruikerz', {delay: 100, reset: false});
+ScrollReveal().reveal('.work', {delay: 100, reset: false});
+ScrollReveal().reveal('.who', {delay: 100, reset: false});
+ScrollReveal().reveal('.team', {delay: 100, reset: false});
+ScrollReveal().reveal('.values', {delay: 100, reset: false});
