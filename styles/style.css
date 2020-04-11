@@ -236,7 +236,13 @@ section {
     padding: 5px; 
     top: 50%;
     text-align: center;
+    width: 25% auto; 
+
     
+}
+
+.teamtext { 
+   line-height: 50px; 
 }
 
 
@@ -254,64 +260,31 @@ section {
 }
 
 .who h1 { 
-    padding: 20px;
+    padding: 25px; 
     text-align: center;
     justify-content: center;
 }
 
 .who { 
-
+/* 
     box-shadow: inset 0px 0px 0px 35px black;
-    box-sizing: border-box;
-    /* border: 1px solid black;
-    border-width: 60px; */
-    /* overflow: hidden;
-    min-height: 100vh; 
-    height: auto; 
-    padding: 25px; 
-    content: 25px;
-     */
+    box-sizing: border-box; */
+    background-color: black; 
+    color: white; 
     position: relative; 
     width: auto;
-    height:100vh;
+    height: 35vh;
     overflow-wrap: break-word;
     overflow: hidden;
+    text-align: center;
 
     
 }
 
-.rowIntro{ 
-  padding: 20px; 
-  margin: 20px; 
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: center;
-  border-spacing: 20px;
-
+.who h1 { 
+    padding: 100px 0;
+    text-align: center;
 }
-
-.columnIntro span { 
- 
-    width: 25px;
-    word-wrap: normal;
-    
-   
-}
-
-.columnIntro img { 
-    padding: 5px;
-    display: block;
-    max-height: 250px;
-    height: auto; 
-    max-width: 100%; 
-   
-}
-
-.columnIntro { 
-    padding: 10px; 
-    margin: 25px; 
-}
-
 
 .gebruikers { 
     text-align: center;
@@ -379,3 +352,33 @@ section {
 
   }
  
+.toelichting { 
+   background-color: white;
+   color: black; 
+    
+}
+
+.toelichtingrow { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.toelichtingcolumn { 
+    
+}
+
+
+.conceptcolumn {
+    width: 25%;
+  }
+  
+  /* Clear floats after image containers */
+  .conceptfase {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto; 
+
+  }
