@@ -1,15 +1,24 @@
+
+// Jquery arrow animation
 $(".arrow").click(function() {
     $('html,body').animate({
         scrollTop: $(".who").offset().top},
         'slow');
 });
 
+
+// Parallax
 var image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, { 
     scale: 2,
     delay: 1
 });
 
+
+
+
+
+// Slideshow doelgroeponderzoek
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
