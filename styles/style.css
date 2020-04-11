@@ -148,6 +148,22 @@ section {
 .toelichtingcolumn {
 }
 
+.columntoelichting{
+  display: flex;
+}
+
+.toelichting-image{
+  max-width: 100%;
+  height: auto;
+  padding-left: 40em;
+}
+
+.colum-text{
+  padding: 50px 50px 10px 50px;
+  font-weight: 600;
+  word-spacing: 0.2em;
+}
+
 /* Team */
 
 .team {
@@ -187,12 +203,25 @@ section {
   width: 25% auto;
 }
 
-.teamtext {
-  line-height: 50px;
-}
+
 
 .teamMember img {
   margin: 20px;
+}
+
+
+
+.teammembers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.teamtext {
+  line-height: 50px;
+  font-weight: 700;
+
 }
 
 /* Onderzoek */
@@ -225,8 +254,10 @@ section {
 }
 
 .columnValue {
-  flex: 50%;
+  flex: 1;
   padding: 25px;
+  font-weight: 700;
+  font-size: large;
   height: auto;
 }
 
@@ -267,7 +298,7 @@ section {
   background-color: #fd5a00;
   color: black;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 50vh;
   height: auto;
   padding: 5px;
 }
@@ -296,6 +327,7 @@ section {
 /* Concepten */
 
 .conceptcolumn {
+  
   width: 25%;
 }
 
@@ -304,38 +336,80 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: auto;
+  align-items: stretch;
+
+}
+.concept-title{
+  padding-top: 10px;
+  padding-left: 300px;
+  padding-bottom: 50px;
 }
 
+.concept-text{
+  padding: 65px;
+  font-weight: 700;
+  font-size: large;
+}
 /* Prototype: introductie */
 
 /* Prototype: toelichting */
 
 /* Prototype: tutorial */
 
+.reveal{
+  background-color: black; color:white; text-align: center;
+  min-height: 50vh;
+}
+
+.reveal-prototype{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: red; color:white; text-align: center;
+  min-height: 50vh;
+  height: auto;
+}
+
 .tutorial {
   background-color: black;
   color: white;
+  font-weight: 700;
+  font-size: large;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 50vh;
   height: auto;
   padding: 5px;
 }
 
 .tutorial h1 {
   text-align: center;
-  justify-content: center;
+ 
+}
+.tutorial-items{
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tutorial-text{
+  padding: 50px;
 }
 
 .containerTutorial {
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   align-content: space-around;
   line-height: 25px;
   padding: auto;
   margin: 35px;
+}
+
+#myVideo{
+  width: 100%;
+  height: auto;
 }
 
 #child1tut {
