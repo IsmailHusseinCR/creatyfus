@@ -161,6 +161,7 @@ section {
 .colum-text{
   padding: 50px 50px 10px 50px;
   font-weight: 600;
+  font-size: large;
   word-spacing: 0.2em;
 }
 
@@ -357,8 +358,29 @@ section {
 /* Prototype: tutorial */
 
 .reveal{
-  background-color: black; color:white; text-align: center;
   min-height: 50vh;
+  background-color: #f5f5f5;
+}
+
+.reveal-title{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.reveal-text{
+  justify-content: safe;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+  font-weight: 700;
+  font-size: large;
+}
+
+
+.img-container{
+  display: flex;
+  justify-content: center;
 }
 
 .reveal-prototype{
