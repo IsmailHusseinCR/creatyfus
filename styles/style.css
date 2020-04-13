@@ -122,8 +122,8 @@ section {
 }
 
 .who {
-  background-color: black;
-  color: white;
+  background-color: #fd5a00;
+  color: black;
   position: relative;
   width: auto;
   height: 35vh;
@@ -137,32 +137,38 @@ section {
 .toelichting {
   background-color: white;
   color: black;
+  height: 110vh;
+  overflow: hidden; 
+  margin: 25px; 
 }
 
-.toelichtingrow {
+.rowtoelichting {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.toelichtingcolumn {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px; 
+  word-break: normal;
 }
 
 .columntoelichting{
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
 }
 
-.toelichting-image{
-  max-width: 100%;
-  height: auto;
-  padding-left: 40em;
-}
 
 .colum-text{
-  padding: 50px 50px 10px 50px;
+  overflow: hidden; 
+  width: 55%; 
+  padding: 35px; 
   font-weight: 600;
   font-size: large;
   word-spacing: 0.2em;
+  word-wrap: break-word;
 }
 
 /* Team */
@@ -176,8 +182,8 @@ section {
   padding: 5px;
 }
 
-.circular--square {
-  border-radius: 50%;
+.circular--square { 
+  padding: 25px; 
 }
 
 .flexteam {
@@ -193,35 +199,32 @@ section {
 }
 
 .meetTeam {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   text-align: center;
+  padding: 35px;
 }
 
 .teamMember {
-  margin: 5px;
-  padding: 5px;
-  top: 50%;
+  margin: 25px;
+  padding: 35px;
   text-align: center;
-  width: 25% auto;
+  width: 15% auto;
 }
 
 
 
 .teamMember img {
-  margin: 20px;
+  padding: 25px; 
 }
 
 
-
-.teammembers{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-}
 
 .teamtext {
-  line-height: 50px;
-  font-weight: 700;
+  line-height: 25px;
+  font-weight: 500;
+  width: 25px; 
 
 }
 
@@ -305,23 +308,27 @@ section {
 }
 
 .flex-container {
+
+  
+  flex-direction: row;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  flex: 1;
+  flex-wrap: nowrap;
   align-items: center;
   overflow: hidden;
-  padding: auto;
   height: auto;
+  padding: 25px; 
+}
+
+.column-text { 
+padding: auto;  
+margin: auto; 
 }
 
 #child {
+  
   text-align: center;
-  align-self: stretch;
-  flex-grow: 0;
-  line-height: 50px;
-  flex: 1;
-  margin: 45px auto;
+  line-height: 35px;
   padding: 25px;
 }
 
@@ -368,21 +375,15 @@ section {
   padding-bottom: 20px;
 }
 
+.flexreveal { 
+  display: flex; 
+  justify-content: space-around;
+  padding: 55px; 
+}
 .reveal-text{
-  justify-content: safe;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 50px;
-  font-weight: 700;
-  font-size: large;
+  width: 50%; 
 }
 
-
-.img-container{
-  display: flex;
-  justify-content: center;
-}
 
 .reveal-prototype{
   margin-top: 10px;
