@@ -18,7 +18,7 @@ new simpleParallax(image, {
 
 
 
-// Slideshow doelgroeponderzoek
+// Slideshow doelgroeponderzoek 
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
