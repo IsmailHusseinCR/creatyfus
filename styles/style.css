@@ -117,13 +117,15 @@ section {
 
 .who h1 {
   padding: 25px;
+  font-size: 120%; 
   text-align: center;
+  color: white; 
   justify-content: center;
 }
 
 .who {
   background-color: #fd5a00;
-  color: black;
+  color: white;
   position: relative;
   width: auto;
   height: 35vh;
@@ -206,11 +208,14 @@ section {
   padding: 35px;
 }
 
-.teamMember {
-  margin: 25px;
-  padding: 35px;
-  text-align: center;
-  width: 15% auto;
+.teammembers {
+
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 0 2rem;
+  width: 18rem;
+  padding: 0.5rem;
+  background-color: white;
 }
 
 
