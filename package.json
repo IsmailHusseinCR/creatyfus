@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "simple-parallax-js": "^5.3.0"
+    "simple-parallax-js": "^5.6.2"
   }
 }
